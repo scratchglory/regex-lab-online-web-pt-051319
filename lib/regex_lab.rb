@@ -1,7 +1,9 @@
 require 'pry'
 
 def starts_with_a_vowel?(word)
-  word.match?(/[aeiou]/)
+  word.each do |string|
+    string.match?(/[aeiou]/)
+  end
   
 end
 
